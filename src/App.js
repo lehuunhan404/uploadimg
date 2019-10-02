@@ -30,7 +30,7 @@ class UpLoad extends react.Component {
     isShowOverlay = images.length > 5 ? !isShowOverlay : isShowOverlay
     return (
       <div className="Wrapper">
-        <input className="Input" type="file" multiple onChange={this.handleChange} />
+        <input className="Input" type="file" name="pic" accept="image/*" multiple onChange={this.handleChange} />
         <div className="Contro">
           {images2.map((image, index) => (
             <div className="Box" key={index}>
